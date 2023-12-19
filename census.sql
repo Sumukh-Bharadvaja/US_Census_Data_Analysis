@@ -35,7 +35,7 @@ group by State
 order by Average_Self_emp DESc 
 Limit 5;
 
-------------  Display highest average employeed to unemployed ratio by states-----------------
+------------  Display highest average unemployed ratio by states-----------------
 
 Select State,avg(Unemployment) as Average_Unemployement
 from us_state_census 
@@ -49,7 +49,7 @@ SELECT State,
        SUM(Women) AS total_females,
        CASE
            WHEN SUM(Women) > 0 THEN ROUND(SUM(Men) / SUM(Women), 2)
-           ELSE NULL -- Avoid division by zero if there are no women counted
+           ELSE NULL -- To Avoid division by zero if there are no women counted
        END AS sex_ratio
 FROM us_state_census
 GROUP BY State;
