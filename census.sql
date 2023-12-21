@@ -1,7 +1,17 @@
+--------------------------- Data Analysis of US Census Data using SQL  ------------------------------------------
+--- Here we focus on knowing some of the statistics of the data using MySQL 
+-- Some of the topics such as Cases, Rank has been utilised to display the major concerns regarding the US State census.
+
+------------------- Creation of Database ------------------------------------
 DROP DATABASE IF EXISTS census;
 Create Database census;
+------------------- Utlising the Database to Create the Table using python code -----------------
+---- Here we are utlising the python tools and libraries to establish a local machine connection to the SQL data base in order to import the data into MySQL Table/schema.
+--- This is shown in the 'csv_to_sql.py' file
 
 use census;
+
+------ Changing the table name using ALTER Table command-------------------
 ALTER Table acs2017_census_tract_data Rename us_state_census;
 
 ---- Display The Records--------------
