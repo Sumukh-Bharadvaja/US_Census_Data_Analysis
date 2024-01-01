@@ -7,11 +7,11 @@
 * MySQL Server 
 
 ### SQL clauses/statements/functions used: 
-*Joins
-*Subqueries
-*rank
-*conditions
-*cases
+- Joins
+- Subqueries
+- Rank
+- Conditions
+- Cases
 
 ### Gist of the Case Study
 
